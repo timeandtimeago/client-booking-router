@@ -1,0 +1,25 @@
+{
+    "name": "my-vue-js-app",
+    "version": "1.0.0",
+    "description": "Simple Vue.js app with email address linking",
+    "main": "index.js",
+    "scripts": {
+      "start": "vue serve",
+      "build": "vue build",
+      "dev": "npm run serve",
+      "test": "vue test"
+    },
+    "keywords": ["vue", "javascript", "email", "linking"],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "vue": "^3",
+      "vue-router": "^4", 
+      "axios": "^0.27.2" 
+    },
+    "devDependencies": {
+      "@vue/test-utils": "^2",
+      "vue-loader": "^16",
+      "webpack": "^5" 
+    }
+  }

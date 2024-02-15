@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Linker</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vue/dist/vue.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Email Linker</h1>
+    <form @submit.prevent="checkEmail">
+      <label for="email">Enter your email:</label>
+      <input type="email" id="email" v-model="email" required>
+      <button type="submit">Check</button>
+    </form>
+    <a v-if="link" :href="link" target="_blank">Click here to access your link!</a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
